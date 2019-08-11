@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/08d73809fc.js"></script>
   
   <title>Frontend Mentor | Huddle landing page with single column layout</title>
 
@@ -15,48 +17,77 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  
+<body> 
   <div class="all-content-container">
-      <header>
-        <img src="images/logo.svg" alt="company-logo">
-      </header>
-      
-    <article>  
+    <header>
+      <div class="header-container">
+        <img class="company-logo" src="images/logo.svg" alt="company-logo">
+      </div>
+    </header>
+        
+  <div class="content-above-footer">
+    <article>    
       <section>
-        <h1>Build The Community Your Fans Will Love</h1>
-      
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but so does 
-        your audience. Create connections with your users as you engage in genuine discussion.
-        </p>
-        <img src="images/screen-mockups.svg" alt="screen-mockups">
-      </section>
-      
-      <section>
-        <h2>Sign Up For Early Access</h2>
-        <input type="text">
-        <button>Register</button>
-      </section>
-      
-    </article>
+          <div class="info-wrapper item">
+            <div class="text-content">
+              <h1>Build The Community Your Fans Will Love</h1>
+              
+              <p>
+                Huddle re-imagines the way we build communities. You have a voice, but so does 
+              your audience. Create connections with your users as you engage in genuine discussion.
+              </p>
+            </div>
+            <div class="mockups">
+              <img class="screen-mockups" src="images/screen-mockups.svg" alt="screen-mockups">
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="call-to-action item">
+            <div class="sign-up">
+              <h2>Sign Up For Early Access</h2>
+            </div>
+            <div class="input-area">
+              <input type="text" placeholder="email@example.com">
+              <button class="btn">Register</button>
+            </div>
+          </div>
+        </section>        
+      </article>
+    </div>
     <footer>
-      <nav>
-        <ul>
-          <li>About Us</li>
-          <li>What We Do</li>
-          <li>FAQ</li>
-          <li>Career</li>
-          <li>Blog</li>
-          <li>Contact Us</li>
-        </ul>
-      </nav>
-    
-      <p>&copy; 2018 Huddle Copyright</p>
-    
-      <p class="attribution">
-        This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-      </p>
+      <div class="footer-content footer-wrapper">
+        <div class="nav-container">
+          <div>
+            <img class="company-logo" src="images/logo-white.svg" alt="company-logo">
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">What We Do</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <span><i class="fab fa-facebook-square"></i></span>
+          <span><i class="fab fa-instagram"></i></span>
+          <span><i class="fab fa-twitter-square"></i></span>
+        </div>
+        
+        <div class="copyright">
+          <small>&copy; 2018 Huddle Copyright</small>
+        </div>
+        
+        <p class="attribution">
+          This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+        </p>
+      </div>
     </footer>
   </div>
 </body>
