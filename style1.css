@@ -42,7 +42,7 @@ h1, h2 {
     display: flex;
     justify-content: flex-start;
     margin: 0 0 3rem 0;
-    padding: 1em;
+    padding: 2em;
 }
 
 .company-logo {
@@ -63,7 +63,7 @@ h1, h2 {
 }
 
 .content-above-footer > * {
-    padding: 3em 4em;
+    padding: 2.5em 4em;
     text-align: center;
 }
 
@@ -106,6 +106,10 @@ input {
     display: flex;
 }
 
+.footer-content {
+    padding: 2rem;
+}
+
 .company-logo-footer {
     width: 20rem;
 }
@@ -130,8 +134,16 @@ input {
     color: #fff;
 }
 
+.copyright {
+    padding-top: 3rem;
+}
+
 .copyright, .attribution {
     text-align: center;
+}
+
+i {
+    padding: 2rem 1rem 0 0;
 }
 
 i, .copyright, .attribution {
@@ -140,4 +152,25 @@ i, .copyright, .attribution {
 
 .attribution a:link {
     color: hsl(322, 100%, 66%);
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1000px) {
+    .company-logo-footer {
+        width: 10rem;
+    }
+
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .copyright {
+        text-align: right;
+    }
 }
