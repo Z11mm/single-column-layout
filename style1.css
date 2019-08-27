@@ -143,6 +143,7 @@ input {
 
 i {
     padding: 2rem 1rem 0 0;
+    font-size: 3em;
 }
 
 i, .copyright, .attribution {
@@ -206,6 +207,11 @@ i, .copyright, .attribution {
     
     .grid-col-2 {
         align-items: start;
+    }
+
+    i {
+        font-size: 1.5em;
+        padding-right: 0.2em;
     }
 
     .copyright {
