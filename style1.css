@@ -78,6 +78,10 @@ h1, h2 {
     flex-flow: column wrap;
 }
 
+.input-area {
+    margin-bottom: 6rem;
+}
+
 input, button {
     margin-top: 2rem;
 }
@@ -202,7 +206,7 @@ i, .copyright, .attribution {
 
     .nav-list li {
         padding-top: 0;
-        padding-left: 3rem;
+        padding-left: 2.5rem;
     }
     
     .grid-col-2 {
@@ -220,5 +224,6 @@ i, .copyright, .attribution {
 
     .attribution {
         grid-column-start: span 2;
+        margin-top: 5rem;
     }
 }
